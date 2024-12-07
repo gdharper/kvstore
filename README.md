@@ -9,7 +9,7 @@ Uses a mix of in-memory and file-backed storage to ensure data can grow to large
  - Implements 2 APIs:
     - **put**: takes a string key and an  value and stores the value under the key
     - **get**: takes a string key and returns the corresponding value if previosuly stored via "put"
- - Fully thread-safe and consistent - utilizes a lock-free, skiptable-based memtable implementation and fully-thread-safe SST files to serve requests.
+ - Fully thread-safe and consistent - utilizes a lock-free, skiplist-based memtable implementation and fully-thread-safe SST files to serve requests.
  - Fully persistent- uses a thread-safe write-ahead-log to persist in-memory data across process crashes.
 
 ## usage
